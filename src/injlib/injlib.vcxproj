@@ -59,16 +59,16 @@
     <Inf2CatUseLocalTime>true</Inf2CatUseLocalTime>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <LibraryPath>$(SolutionDir)..\AVCore\lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(SolutionDir)..\AVCore\lib\$(Platform);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <LibraryPath>$(SolutionDir)..\AVCore\lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(SolutionDir)..\AVCore\lib\$(Platform);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <LibraryPath>$(SolutionDir)..\AVCore\lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(SolutionDir)..\AVCore\lib\$(Platform);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <LibraryPath>$(SolutionDir)..\AVCore\lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(SolutionDir)..\AVCore\lib\$(Platform);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
