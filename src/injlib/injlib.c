@@ -1328,7 +1328,7 @@ InjCreateProcessNotifyRoutineEx(
     ULONG replyLength = sizeof(AV_EVENT_RESPONSE);
 
     // Send event to the AVCore UM service and wait for the response
-    status = AVCommSendEvent(AvProcessCreate,
+    status = AVCommSendEvent(AvApcProcessInject,
       &eventProcessCreate,
       sizeof(AV_EVENT_PROCESS_CREATE),
       &UMResponse,
